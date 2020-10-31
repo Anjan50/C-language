@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+int i,a,b,c,n,m,sum;
+printf("Enter the value of m ");
+scanf("%d",&m);
+sum=0;
+a=2;
+b=3;
+c=5;
+printf("%d%d%d",a,b,c);
+sum=a+b+c;
+
+for(i=1;i<=m-3;i=i+1)
+{
+n=a+b+c;
+printf("\n The value of n is %d",n);
+a=b;
+b=c;
+c=n;
+sum=sum+n;
+}
+printf("\n The sum is %d",sum);
+}
